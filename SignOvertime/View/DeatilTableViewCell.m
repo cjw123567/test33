@@ -39,6 +39,7 @@
         [self addSubview:namelabel];
         
         
+        ///zhush
         UILabel *idlabel = [[UILabel alloc] initWithFrame:CGRectMake(namelabel.x + namelabel.width + 70, namelabel.y, namelabel.width, namelabel.height)];
         //idlabel.text = self.employee.ID;
         //idlabel.backgroundColor  =[UIColor redColor];
