@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154A45814777A7BF36A6AEB4 /* libPods-SignOvertime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CF7C0EB4B8EE727D8DE3B7 /* libPods-SignOvertime.a */; };
+		CE10511B21143F5100EAC220 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE10511A21143F5100EAC220 /* AppDelegate.m */; };
+		CE10512121143F5100EAC220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE10511F21143F5100EAC220 /* Main.storyboard */; };
+		CE10512421143F5100EAC220 /* SignOvertime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE10512221143F5100EAC220 /* SignOvertime.xcdatamodeld */; };
+		CE10512621143F5700EAC220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE10512521143F5700EAC220 /* Assets.xcassets */; };
+		CE10512921143F5700EAC220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE10512721143F5700EAC220 /* LaunchScreen.storyboard */; };
+		CE10512C21143F5700EAC220 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE10512B21143F5700EAC220 /* main.m */; };
+		CE10513621143F5800EAC220 /* SignOvertimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE10513521143F5800EAC220 /* SignOvertimeTests.m */; };
+		CE10514121143F5800EAC220 /* SignOvertimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE10514021143F5800EAC220 /* SignOvertimeUITests.m */; };
+		CE770CA321460BBA004CC09A /* FXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE770CA221460BBA004CC09A /* FXButton.m */; };
+		CE770CA621474756004CC09A /* FLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE770CA521474755004CC09A /* FLNetworkManager.m */; };
+		CE770CA921489DCD004CC09A /* OvertimeConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE770CA821489DCD004CC09A /* OvertimeConfirmViewController.m */; };
+		CE85600F21216C690082A41E /* DeatilTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85600921216C690082A41E /* DeatilTableViewController.m */; };
+		CE85601021216C690082A41E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85600A21216C690082A41E /* ViewController.m */; };
+		CE85601121216C690082A41E /* OverTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85600B21216C690082A41E /* OverTimeTableViewController.m */; };
+		CE85601621216C880082A41E /* LJsignView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85601521216C870082A41E /* LJsignView.m */; };
+		CE85601E21216C930082A41E /* NSString+decription.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85601B21216C930082A41E /* NSString+decription.m */; };
+		CE85601F21216C930082A41E /* NSArray+decription.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85601C21216C930082A41E /* NSArray+decription.m */; };
+		CE85602021216C930082A41E /* NSDictionary+decription.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85601D21216C930082A41E /* NSDictionary+decription.m */; };
+		CE85602321216D640082A41E /* UIView+FJ.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85602121216D640082A41E /* UIView+FJ.m */; };
+		CE85602921216E650082A41E /* Swipecardtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85602821216E650082A41E /* Swipecardtime.m */; };
+		CE85602C212AA71C0082A41E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85602B212AA71B0082A41E /* Employee.m */; };
+		CE85602F212D57140082A41E /* OverTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85602E212D57140082A41E /* OverTimeViewController.m */; };
+		CE856032212E7FD60082A41E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE856031212E7FD60082A41E /* LoginViewController.m */; };
+		CE856035212E9E180082A41E /* Button-Add.png in Resources */ = {isa = PBXBuildFile; fileRef = CE856034212E9E180082A41E /* Button-Add.png */; };
+		CE856039212EA4F00082A41E /* foxlinkLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = CE856038212EA4F00082A41E /* foxlinkLogin.png */; };
+		CE85603D212F934C0082A41E /* DeatilTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85603B212F934C0082A41E /* DeatilTableViewCell.m */; };
+		CE85603E212F934C0082A41E /* DeatilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE85603C212F934C0082A41E /* DeatilTableViewCell.xib */; };
+		CE856041212FA3E70082A41E /* LoginStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CE856040212FA3E70082A41E /* LoginStatus.m */; };
+		CE8560432135217E0082A41E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8560422135217D0082A41E /* Photos.framework */; };
+		CE8560452135218D0082A41E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8560442135218D0082A41E /* AssetsLibrary.framework */; };
+		CE856048213E54D00082A41E /* ZZZKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE856046213E54CE0082A41E /* ZZZKeyChainHelper.m */; };
+		CEEBC80F2140C5CD003589A1 /* resignBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEBC80E2140C5CD003589A1 /* resignBtn.png */; };
+		CEEBC8112140C5D7003589A1 /* saveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CEEBC8102140C5D7003589A1 /* saveBtn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE10513221143F5800EAC220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE10510E21143F5000EAC220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE10511521143F5100EAC220;
+			remoteInfo = SignOvertime;
+		};
+		CE10513D21143F5800EAC220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE10510E21143F5000EAC220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE10511521143F5100EAC220;
+			remoteInfo = SignOvertime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07CF7C0EB4B8EE727D8DE3B7 /* libPods-SignOvertime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SignOvertime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B29A6FE1FFFA726C2081FE /* Pods-SignOvertime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignOvertime.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignOvertime/Pods-SignOvertime.release.xcconfig"; sourceTree = "<group>"; };
+		1C4207A6F6694F3BC403E3F6 /* Pods-SignOvertime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignOvertime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignOvertime/Pods-SignOvertime.debug.xcconfig"; sourceTree = "<group>"; };
+		CE10511621143F5100EAC220 /* OvertimeConfirm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvertimeConfirm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE10511921143F5100EAC220 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE10511A21143F5100EAC220 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE10512021143F5100EAC220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE10512321143F5100EAC220 /* SignOvertime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignOvertime.xcdatamodel; sourceTree = "<group>"; };
+		CE10512521143F5700EAC220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE10512821143F5700EAC220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE10512A21143F5700EAC220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE10512B21143F5700EAC220 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE10513121143F5800EAC220 /* OvertimeConfirmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvertimeConfirmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE10513521143F5800EAC220 /* SignOvertimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignOvertimeTests.m; sourceTree = "<group>"; };
+		CE10513721143F5800EAC220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE10513C21143F5800EAC220 /* OvertimeConfirmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvertimeConfirmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE10514021143F5800EAC220 /* SignOvertimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignOvertimeUITests.m; sourceTree = "<group>"; };
+		CE10514221143F5800EAC220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE770CA121460BBA004CC09A /* FXButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXButton.h; sourceTree = "<group>"; };
+		CE770CA221460BBA004CC09A /* FXButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXButton.m; sourceTree = "<group>"; };
+		CE770CA421474755004CC09A /* FLNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNetworkManager.h; sourceTree = "<group>"; };
+		CE770CA521474755004CC09A /* FLNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLNetworkManager.m; sourceTree = "<group>"; };
+		CE770CA721489DCD004CC09A /* OvertimeConfirmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvertimeConfirmViewController.h; sourceTree = "<group>"; };
+		CE770CA821489DCD004CC09A /* OvertimeConfirmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OvertimeConfirmViewController.m; sourceTree = "<group>"; };
+		CE85600921216C690082A41E /* DeatilTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeatilTableViewController.m; sourceTree = "<group>"; };
+		CE85600A21216C690082A41E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE85600B21216C690082A41E /* OverTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverTimeTableViewController.m; sourceTree = "<group>"; };
+		CE85600C21216C690082A41E /* DeatilTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeatilTableViewController.h; sourceTree = "<group>"; };
+		CE85600D21216C690082A41E /* OverTimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverTimeTableViewController.h; sourceTree = "<group>"; };
+		CE85600E21216C690082A41E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE85601421216C870082A41E /* LJsignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJsignView.h; sourceTree = "<group>"; };
+		CE85601521216C870082A41E /* LJsignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJsignView.m; sourceTree = "<group>"; };
+		CE85601821216C930082A41E /* NSDictionary+decription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+decription.h"; sourceTree = "<group>"; };
+		CE85601921216C930082A41E /* NSArray+decription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+decription.h"; sourceTree = "<group>"; };
+		CE85601A21216C930082A41E /* NSString+decription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+decription.h"; sourceTree = "<group>"; };
+		CE85601B21216C930082A41E /* NSString+decription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+decription.m"; sourceTree = "<group>"; };
+		CE85601C21216C930082A41E /* NSArray+decription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+decription.m"; sourceTree = "<group>"; };
+		CE85601D21216C930082A41E /* NSDictionary+decription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+decription.m"; sourceTree = "<group>"; };
+		CE85602121216D640082A41E /* UIView+FJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FJ.m"; sourceTree = "<group>"; };
+		CE85602221216D640082A41E /* UIView+FJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FJ.h"; sourceTree = "<group>"; };
+		CE85602721216E650082A41E /* Swipecardtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swipecardtime.h; sourceTree = "<group>"; };
+		CE85602821216E650082A41E /* Swipecardtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swipecardtime.m; sourceTree = "<group>"; };
+		CE85602A212AA71B0082A41E /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		CE85602B212AA71B0082A41E /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		CE85602D212D57140082A41E /* OverTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverTimeViewController.h; sourceTree = "<group>"; };
+		CE85602E212D57140082A41E /* OverTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverTimeViewController.m; sourceTree = "<group>"; };
+		CE856030212E7FD60082A41E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CE856031212E7FD60082A41E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CE856034212E9E180082A41E /* Button-Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-Add.png"; sourceTree = "<group>"; };
+		CE856038212EA4F00082A41E /* foxlinkLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foxlinkLogin.png; sourceTree = "<group>"; };
+		CE85603A212F934C0082A41E /* DeatilTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeatilTableViewCell.h; sourceTree = "<group>"; };
+		CE85603B212F934C0082A41E /* DeatilTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeatilTableViewCell.m; sourceTree = "<group>"; };
+		CE85603C212F934C0082A41E /* DeatilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeatilTableViewCell.xib; sourceTree = "<group>"; };
+		CE85603F212FA3E70082A41E /* LoginStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginStatus.h; sourceTree = "<group>"; };
+		CE856040212FA3E70082A41E /* LoginStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginStatus.m; sourceTree = "<group>"; };
+		CE8560422135217D0082A41E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		CE8560442135218D0082A41E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CE856046213E54CE0082A41E /* ZZZKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZZKeyChainHelper.m; sourceTree = "<group>"; };
+		CE856047213E54CE0082A41E /* ZZZKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZZKeyChainHelper.h; sourceTree = "<group>"; };
+		CEEBC80E2140C5CD003589A1 /* resignBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resignBtn.png; path = ../../../../Downloads/resignBtn.png; sourceTree = "<group>"; };
+		CEEBC8102140C5D7003589A1 /* saveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveBtn.png; path = ../../../../Downloads/saveBtn.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE10511321143F5100EAC220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8560452135218D0082A41E /* AssetsLibrary.framework in Frameworks */,
+				CE8560432135217E0082A41E /* Photos.framework in Frameworks */,
+				154A45814777A7BF36A6AEB4 /* libPods-SignOvertime.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10512E21143F5800EAC220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10513921143F5800EAC220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2087EBBB18CC9525CEFAD12E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C4207A6F6694F3BC403E3F6 /* Pods-SignOvertime.debug.xcconfig */,
+				15B29A6FE1FFFA726C2081FE /* Pods-SignOvertime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27F53F8135A309558C7B7CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8560442135218D0082A41E /* AssetsLibrary.framework */,
+				CE8560422135217D0082A41E /* Photos.framework */,
+				07CF7C0EB4B8EE727D8DE3B7 /* libPods-SignOvertime.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE10510D21143F5000EAC220 = {
+			isa = PBXGroup;
+			children = (
+				CE10511821143F5100EAC220 /* SignOvertime */,
+				CE10513421143F5800EAC220 /* SignOvertimeTests */,
+				CE10513F21143F5800EAC220 /* SignOvertimeUITests */,
+				CE10511721143F5100EAC220 /* Products */,
+				2087EBBB18CC9525CEFAD12E /* Pods */,
+				27F53F8135A309558C7B7CAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE10511721143F5100EAC220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE10511621143F5100EAC220 /* OvertimeConfirm.app */,
+				CE10513121143F5800EAC220 /* OvertimeConfirmTests.xctest */,
+				CE10513C21143F5800EAC220 /* OvertimeConfirmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE10511821143F5100EAC220 /* SignOvertime */ = {
+			isa = PBXGroup;
+			children = (
+				CE856033212E9DFF0082A41E /* Image */,
+				CE85601721216C930082A41E /* Other */,
+				CE85601321216C870082A41E /* View */,
+				CE85601221216C750082A41E /* Model */,
+				CE85600821216C690082A41E /* Control */,
+				CE10511921143F5100EAC220 /* AppDelegate.h */,
+				CE10511A21143F5100EAC220 /* AppDelegate.m */,
+				CE10511F21143F5100EAC220 /* Main.storyboard */,
+				CE10512521143F5700EAC220 /* Assets.xcassets */,
+				CE10512721143F5700EAC220 /* LaunchScreen.storyboard */,
+				CE10512A21143F5700EAC220 /* Info.plist */,
+				CE10512B21143F5700EAC220 /* main.m */,
+				CE10512221143F5100EAC220 /* SignOvertime.xcdatamodeld */,
+			);
+			path = SignOvertime;
+			sourceTree = "<group>";
+		};
+		CE10513421143F5800EAC220 /* SignOvertimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE10513521143F5800EAC220 /* SignOvertimeTests.m */,
+				CE10513721143F5800EAC220 /* Info.plist */,
+			);
+			path = SignOvertimeTests;
+			sourceTree = "<group>";
+		};
+		CE10513F21143F5800EAC220 /* SignOvertimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE10514021143F5800EAC220 /* SignOvertimeUITests.m */,
+				CE10514221143F5800EAC220 /* Info.plist */,
+			);
+			path = SignOvertimeUITests;
+			sourceTree = "<group>";
+		};
+		CE85600821216C690082A41E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				CE85600C21216C690082A41E /* DeatilTableViewController.h */,
+				CE85600921216C690082A41E /* DeatilTableViewController.m */,
+				CE85600E21216C690082A41E /* ViewController.h */,
+				CE85600A21216C690082A41E /* ViewController.m */,
+				CE85600D21216C690082A41E /* OverTimeTableViewController.h */,
+				CE85600B21216C690082A41E /* OverTimeTableViewController.m */,
+				CE85602D212D57140082A41E /* OverTimeViewController.h */,
+				CE85602E212D57140082A41E /* OverTimeViewController.m */,
+				CE856030212E7FD60082A41E /* LoginViewController.h */,
+				CE856031212E7FD60082A41E /* LoginViewController.m */,
+				CE770CA721489DCD004CC09A /* OvertimeConfirmViewController.h */,
+				CE770CA821489DCD004CC09A /* OvertimeConfirmViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		CE85601221216C750082A41E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE85602721216E650082A41E /* Swipecardtime.h */,
+				CE85602821216E650082A41E /* Swipecardtime.m */,
+				CE85602A212AA71B0082A41E /* Employee.h */,
+				CE85602B212AA71B0082A41E /* Employee.m */,
+				CE85603F212FA3E70082A41E /* LoginStatus.h */,
+				CE856040212FA3E70082A41E /* LoginStatus.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE85601321216C870082A41E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE85601421216C870082A41E /* LJsignView.h */,
+				CE85601521216C870082A41E /* LJsignView.m */,
+				CE85603A212F934C0082A41E /* DeatilTableViewCell.h */,
+				CE85603B212F934C0082A41E /* DeatilTableViewCell.m */,
+				CE85603C212F934C0082A41E /* DeatilTableViewCell.xib */,
+				CE770CA121460BBA004CC09A /* FXButton.h */,
+				CE770CA221460BBA004CC09A /* FXButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE85601721216C930082A41E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CE856047213E54CE0082A41E /* ZZZKeyChainHelper.h */,
+				CE856046213E54CE0082A41E /* ZZZKeyChainHelper.m */,
+				CE85602221216D640082A41E /* UIView+FJ.h */,
+				CE85602121216D640082A41E /* UIView+FJ.m */,
+				CE85601821216C930082A41E /* NSDictionary+decription.h */,
+				CE85601921216C930082A41E /* NSArray+decription.h */,
+				CE85601A21216C930082A41E /* NSString+decription.h */,
+				CE85601B21216C930082A41E /* NSString+decription.m */,
+				CE85601C21216C930082A41E /* NSArray+decription.m */,
+				CE85601D21216C930082A41E /* NSDictionary+decription.m */,
+				CE770CA421474755004CC09A /* FLNetworkManager.h */,
+				CE770CA521474755004CC09A /* FLNetworkManager.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CE856033212E9DFF0082A41E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBC8102140C5D7003589A1 /* saveBtn.png */,
+				CEEBC80E2140C5CD003589A1 /* resignBtn.png */,
+				CE856038212EA4F00082A41E /* foxlinkLogin.png */,
+				CE856034212E9E180082A41E /* Button-Add.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE10511521143F5100EAC220 /* OvertimeConfirm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE10514521143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirm" */;
+			buildPhases = (
+				CE9F6DE325ABC326BDBFE4B1 /* [CP] Check Pods Manifest.lock */,
+				CE10511221143F5100EAC220 /* Sources */,
+				CE10511321143F5100EAC220 /* Frameworks */,
+				CE10511421143F5100EAC220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OvertimeConfirm;
+			productName = SignOvertime;
+			productReference = CE10511621143F5100EAC220 /* OvertimeConfirm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE10513021143F5800EAC220 /* OvertimeConfirmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE10514821143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirmTests" */;
+			buildPhases = (
+				CE10512D21143F5800EAC220 /* Sources */,
+				CE10512E21143F5800EAC220 /* Frameworks */,
+				CE10512F21143F5800EAC220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE10513321143F5800EAC220 /* PBXTargetDependency */,
+			);
+			name = OvertimeConfirmTests;
+			productName = SignOvertimeTests;
+			productReference = CE10513121143F5800EAC220 /* OvertimeConfirmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE10513B21143F5800EAC220 /* OvertimeConfirmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE10514B21143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirmUITests" */;
+			buildPhases = (
+				CE10513821143F5800EAC220 /* Sources */,
+				CE10513921143F5800EAC220 /* Frameworks */,
+				CE10513A21143F5800EAC220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE10513E21143F5800EAC220 /* PBXTargetDependency */,
+			);
+			name = OvertimeConfirmUITests;
+			productName = SignOvertimeUITests;
+			productReference = CE10513C21143F5800EAC220 /* OvertimeConfirmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE10510E21143F5000EAC220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE10511521143F5100EAC220 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					CE10513021143F5800EAC220 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = CE10511521143F5100EAC220;
+					};
+					CE10513B21143F5800EAC220 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = CE10511521143F5100EAC220;
+					};
+				};
+			};
+			buildConfigurationList = CE10511121143F5000EAC220 /* Build configuration list for PBXProject "OvertimeConfirm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE10510D21143F5000EAC220;
+			productRefGroup = CE10511721143F5100EAC220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE10511521143F5100EAC220 /* OvertimeConfirm */,
+				CE10513021143F5800EAC220 /* OvertimeConfirmTests */,
+				CE10513B21143F5800EAC220 /* OvertimeConfirmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE10511421143F5100EAC220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE10512921143F5700EAC220 /* LaunchScreen.storyboard in Resources */,
+				CEEBC8112140C5D7003589A1 /* saveBtn.png in Resources */,
+				CE856039212EA4F00082A41E /* foxlinkLogin.png in Resources */,
+				CE85603E212F934C0082A41E /* DeatilTableViewCell.xib in Resources */,
+				CE10512621143F5700EAC220 /* Assets.xcassets in Resources */,
+				CEEBC80F2140C5CD003589A1 /* resignBtn.png in Resources */,
+				CE10512121143F5100EAC220 /* Main.storyboard in Resources */,
+				CE856035212E9E180082A41E /* Button-Add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10512F21143F5800EAC220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10513A21143F5800EAC220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE9F6DE325ABC326BDBFE4B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignOvertime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE10511221143F5100EAC220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE770CA621474756004CC09A /* FLNetworkManager.m in Sources */,
+				CE10511B21143F5100EAC220 /* AppDelegate.m in Sources */,
+				CE85601E21216C930082A41E /* NSString+decription.m in Sources */,
+				CE770CA921489DCD004CC09A /* OvertimeConfirmViewController.m in Sources */,
+				CE85601F21216C930082A41E /* NSArray+decription.m in Sources */,
+				CE85602C212AA71C0082A41E /* Employee.m in Sources */,
+				CE856041212FA3E70082A41E /* LoginStatus.m in Sources */,
+				CE85601021216C690082A41E /* ViewController.m in Sources */,
+				CE10512C21143F5700EAC220 /* main.m in Sources */,
+				CE85603D212F934C0082A41E /* DeatilTableViewCell.m in Sources */,
+				CE85601121216C690082A41E /* OverTimeTableViewController.m in Sources */,
+				CE85600F21216C690082A41E /* DeatilTableViewController.m in Sources */,
+				CE770CA321460BBA004CC09A /* FXButton.m in Sources */,
+				CE85602921216E650082A41E /* Swipecardtime.m in Sources */,
+				CE85601621216C880082A41E /* LJsignView.m in Sources */,
+				CE85602021216C930082A41E /* NSDictionary+decription.m in Sources */,
+				CE85602F212D57140082A41E /* OverTimeViewController.m in Sources */,
+				CE85602321216D640082A41E /* UIView+FJ.m in Sources */,
+				CE10512421143F5100EAC220 /* SignOvertime.xcdatamodeld in Sources */,
+				CE856048213E54D00082A41E /* ZZZKeyChainHelper.m in Sources */,
+				CE856032212E7FD60082A41E /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10512D21143F5800EAC220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE10513621143F5800EAC220 /* SignOvertimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE10513821143F5800EAC220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE10514121143F5800EAC220 /* SignOvertimeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE10513321143F5800EAC220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE10511521143F5100EAC220 /* OvertimeConfirm */;
+			targetProxy = CE10513221143F5800EAC220 /* PBXContainerItemProxy */;
+		};
+		CE10513E21143F5800EAC220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE10511521143F5100EAC220 /* OvertimeConfirm */;
+			targetProxy = CE10513D21143F5800EAC220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE10511F21143F5100EAC220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE10512021143F5100EAC220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE10512721143F5700EAC220 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE10512821143F5700EAC220 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE10514321143F5800EAC220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE10514421143F5800EAC220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE10514621143F5800EAC220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4207A6F6694F3BC403E3F6 /* Pods-SignOvertime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SignOvertime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YZLog",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxlink.OvertimeConfirm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CE10514721143F5800EAC220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B29A6FE1FFFA726C2081FE /* Pods-SignOvertime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = SignOvertime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YZLog",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxlink.OvertimeConfirm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		CE10514921143F5800EAC220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				INFOPLIST_FILE = SignOvertimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengjun.SignOvertimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvertimeConfirm.app/OvertimeConfirm";
+			};
+			name = Debug;
+		};
+		CE10514A21143F5800EAC220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				INFOPLIST_FILE = SignOvertimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengjun.SignOvertimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvertimeConfirm.app/OvertimeConfirm";
+			};
+			name = Release;
+		};
+		CE10514C21143F5800EAC220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				INFOPLIST_FILE = SignOvertimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengjun.SignOvertimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignOvertime;
+			};
+			name = Debug;
+		};
+		CE10514D21143F5800EAC220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVRYKFG462;
+				INFOPLIST_FILE = SignOvertimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengjun.SignOvertimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignOvertime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE10511121143F5000EAC220 /* Build configuration list for PBXProject "OvertimeConfirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE10514321143F5800EAC220 /* Debug */,
+				CE10514421143F5800EAC220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE10514521143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE10514621143F5800EAC220 /* Debug */,
+				CE10514721143F5800EAC220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE10514821143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE10514921143F5800EAC220 /* Debug */,
+				CE10514A21143F5800EAC220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE10514B21143F5800EAC220 /* Build configuration list for PBXNativeTarget "OvertimeConfirmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE10514C21143F5800EAC220 /* Debug */,
+				CE10514D21143F5800EAC220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE10512221143F5100EAC220 /* SignOvertime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE10512321143F5100EAC220 /* SignOvertime.xcdatamodel */,
+			);
+			currentVersion = CE10512321143F5100EAC220 /* SignOvertime.xcdatamodel */;
+			path = SignOvertime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE10510E21143F5000EAC220 /* Project object */;
+}

@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "LoginViewController.h"
+#import "ViewController.h"
+#import "DeatilTableViewController.h"
+@interface AppDelegate ()<UIApplicationDelegate>
 
 @end
 
@@ -17,6 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    application.delegate = self;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+
+    //ViewController *ctrl = [[ViewController alloc] init];
+
+    //添加自控制到導航控制器中
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    //設置導航控制器衛根控制器
+    self.window.rootViewController = nav;
+    LoginViewController *loginCtrl = [[LoginViewController alloc] init];
+   // DeatilTableViewController *deatilCtrl = [[DeatilTableViewController alloc] init];
+    [nav pushViewController:loginCtrl animated:YES];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
